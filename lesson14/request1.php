@@ -62,7 +62,7 @@
 			$oss = array('win' => 'Windows', 'mac' => 'Mac', 'linux' => 'Linux');
 			foreach($oss as $k_os => $v_os){
 				print '<label>';
-				print "<input type='checkbox' name='os' value='$k_os'";
+				print "<input type='checkbox' name='os[]' value='$k_os'";
 				foreach ($defs['os'] as $os){
 					if ($k_os == $os){
 						print ' checked="checked"';
